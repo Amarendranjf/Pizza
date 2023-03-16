@@ -12,10 +12,6 @@ const Header = () => {
       <div className='headerLeft'>
         <img className='image' src = "https://pizzaonline.dominos.co.in/static/assets/logo_white.svg" alt= "image"/>
       </div>
-      <div className='headerMid'> 
-        <h3 className='headerText'>Select Location</h3>
-        <h3 className='headerText'>Select Location according to your place</h3>
-      </div>
 
       <div onClick = {()=> navigate("/cart")} style={{position: "relative", cursor: "pointer"}}>
         {/* <ShoppingCart style = {{color: "white"}}/> */}
