@@ -39,7 +39,7 @@ const PizzaItem = ({ pizza }) => {
           <h4 className='pizzaItemDescription'>{pizza.description.length > 30 ? pizza.description.substr(0, 30) + "..." : pizza.description}</h4>
           <div>
 
-            <select value={value} onChange={(e) => handleChange(e)}>
+            <select className="pizzaItemButton" value={value} onChange={(e) => handleChange(e)}>
 
               <option value="Fresh Veggies">Fresh Tomatoes</option>
 
@@ -53,7 +53,7 @@ const PizzaItem = ({ pizza }) => {
 
           <div>
 
-            <select value={size} onChange={(e) => handleSize(e)}>
+            <select className="pizzaItemButton" value={size} onChange={(e) => handleSize(e)}>
 
               <option value="1">Regular</option>
 
