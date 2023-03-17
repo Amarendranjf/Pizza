@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import "./Header.css";
-// import ShoppingCart from "../node_modules/@mui/icons-material/ShoppingCart"
+import { ShoppingCart } from '@mui/icons-material';
 
 const Header = () => {
   const cart = useSelector((state) => state.cart.cart);
@@ -14,7 +14,7 @@ const Header = () => {
       </div>
 
       <div onClick = {()=> navigate("/cart")} style={{position: "relative", cursor: "pointer"}}>
-        {/* <ShoppingCart style = {{color: "white"}}/> */}
+        <ShoppingCart style = {{color: "white"}}/>
         <span style={{backgroundColor: "white", width: 14, height: 14, borderRadius:
       7, textAlign: "center", position:"absolute",bottom:14,left:14, fontSize:13, fontWeight:"400"}}>{cart.length}</span>
       </div>
